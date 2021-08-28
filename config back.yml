@@ -1,0 +1,8 @@
+---
+- name: Backup config
+  hosts: all
+
+  tasks:
+    - name: copy config to tftp server
+      cisco.ios.ios_command:
+        commands: copy run {{ tftp }}
