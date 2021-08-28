@@ -5,4 +5,4 @@
   tasks:
     - name: copy config to tftp server
       cisco.ios.ios_command:
-        commands: copy run {{ tftp }}
+        commands: copy run tftp://192.168.164.111/running.txt
